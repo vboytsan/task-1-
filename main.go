@@ -22,7 +22,7 @@ func main() {
 	go func() {
 		select {
 		case <-time.After(10 * time.Second):
-			fmt.Println("Goodbye World")
+			fmt.Println("Goodbye World!")
 			done <- true
 		case <-interrupt:
 			fmt.Println("Stopped by the user after x seconds")
