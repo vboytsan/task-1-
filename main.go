@@ -11,7 +11,7 @@ func main() {
 
 	message := make(chan string)
 	go func() {
-		message <- "Hello World!"
+		message <- "Hello World"
 	}()
 	msg := <-message
 	fmt.Println(msg)
